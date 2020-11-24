@@ -1,0 +1,16 @@
+title: My 1st GitHub
+description: My 1st step to Learn GetHub
+template:
+  repo: my-1st-github-template
+  name: my-1st-github
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
